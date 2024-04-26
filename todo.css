@@ -1,0 +1,201 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    background-color: whitesmoke;
+}
+
+:root {
+    --primaryColor: #920000;
+    --secondaryColor: #fccece;
+    --menu-width: 15vw;
+    --primary-padding: 1rem;
+    --secondary-padding: 1.5rem;
+    --primary-radius: 6px;
+    --secondary-radius: 1rem;
+} */
+
+.container {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40vh);
+    gap: var(--secondary-padding);
+}
+
+.container>#main-one {
+    height: 50vh;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: white;
+    overflow: auto;
+    padding: var(--primary-padding);
+    /* background-color: whitesmoke; */
+    border-radius: var(--secondary-radius);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+.grid-table {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: var(--primary-padding);
+}
+
+.grid-table>div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Five columns of equal width */
+    /* justify-items: flex-start; */
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.grid-item {
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    text-align: center;
+    /* Align text center */
+}
+
+.grid-item {
+    text-transform: capitalize;
+}
+
+.completed {
+    color: rgb(35, 241, 35);
+    font-size: 0.8rem;
+    padding: 3px 5px;
+    border: 0.5px solid rgb(35, 241, 35);
+    border-radius: var(--secondary-radius);
+
+}
+
+.cancelled {
+    color: red;
+    font-size: 0.8rem;
+    padding: 3px 4px;
+    border: 0.5px solid red;
+    border-radius: var(--secondary-radius);
+
+}
+
+.pending {
+    color: orange;
+    font-size: 0.8rem;
+    padding: 3px 5px;
+    border: 0.5px solid orange;
+    border-radius: var(--secondary-radius);
+
+}
+
+.grid-table>div:nth-child(1) {
+    font-weight: 600;
+}
+
+.grid-table>div {
+    border-bottom: 0.5px solid var(--secondaryColor);
+    border-radius: 1rem;
+}
+
+.grid-table::-webkit-scrollbar {
+    display: none;
+}
+
+.container1 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: var(--secondary-radius);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+
+h2 {
+    margin-top: 0;
+    /* margin-bottom: 10px; */
+    font-size: 24px;
+    color: royalblue;
+    border-bottom: 2px solid rgba(65, 105, 225, 0.163);
+    padding-bottom: 10px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 12px 4px;
+    border-bottom: 1px solid rgba(65, 105, 225, 0.366);
+    border-radius: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-item span {
+    flex-grow: 1;
+
+}
+
+.cancel-button {
+    padding: 5px 10px;
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #ff0000;
+}
+
+.add-todo input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.add-todo button {
+    padding: 10px 20px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+}
+.todo-list {
+    overflow: auto;
+
+}
+.todo-list::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,117 @@
+
+
+/* Style for the cards */
+.card {
+    background-color: #fff;
+    border-radius: var(--secondary-radius);
+}
+
+/* Style for card body */
+.card-body {
+    padding: 1.25rem;
+}
+
+/* Style for card title */
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Style for font-weight-500 */
+.font-weight-500 {
+    font-weight: 500;
+}
+
+/* Style for d-flex */
+.d-flex {
+    display: flex;
+}
+
+/* Style for flex-wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Style for mr-5 and mt-3 */
+.mr-5 {
+    margin-right: 1.25rem;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+/* Style for text-muted */
+.text-muted {
+    color: #6c757d;
+}
+
+/* Style for text-primary */
+.text-primary {
+    color: #007bff;
+}
+
+/* Style for fs-30 */
+.fs-30 {
+    font-size: 1.875rem;
+}
+
+/* Style for font-weight-medium */
+.font-weight-medium {
+    font-weight: 500;
+}
+
+/* Style for chartjs-size-monitor */
+.chartjs-size-monitor {
+    direction: ltr;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+}
+
+/* Style for chartjs-render-monitor */
+.chartjs-render-monitor {
+    display: block;
+    height: 167px;
+    width: 335px;
+}
+
+/* Style for chartjs-legend */
+.chartjs-legend {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for justify-content-between */
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Style for text-info */
+.text-info {
+    color: #17a2b8;
+}
+
+/* Style for sales legend */
+#sales-legend .legend {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#sales-legend .legend li {
+    margin-bottom: 0.5rem;
+}
+
+#sales-legend .legend li span {
+    display: inline-block;
+    width: 1rem;
+    height: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.25rem;
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notifications.css">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="forms.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="dashboared">
+        <div id="menu">
+            <ul>
+
+                <li class="total-flex"><i class="fas fa-tachometer-alt"></i><a href="#nav-item-2">dashboard</a></li>
+                <li class="total-flex"><i class="fas fa-chart-line"></i><a href="#nav-item-3">detailed reports</a></li>
+                <li class="total-flex"><i class="fas fa-list"></i><a href="#nav-item-4">to do</a></li>
+                <li class="total-flex"><i class="fas fa-bell"></i><a href="#notification-container">notifications</a></li>
+                <li class="total-flex"><i class="fas fa-life-ring"></i><a href="#nav-item-6">support</a></li>
+            </ul>
+        </div>
+        <div id="dashboared-display">
+            <div class="item-1" id="nav-item-2">
+                <div>
+                    <h2 style="border: none;">Welcome Rahul Acharya</h2>
+                    <span>Today(10 jan 2024)</span>
+                </div>
+                <p>All systems are running smoothly ! You have <span id="notification">3 unread alerts !</span></p>
+            </div>
+            <div class="item-2">
+                <img src="people.svg" alt="image">
+                <div class="weather-info">
+                    <div class="d-flex">
+                      <div>
+                        <h1 class="mb-0 font-weight-normal"><i class="fa-solid fa-sun"></i>
+                            31</h1><sup>C</sup>
+                      </div>
+                      <div class="ml-2">
+                        <h3 class="location font-weight-normal" style="font-size: xx-large;">Bangalore</h3>
+                        <h3 class="font-weight-normal">India</h3>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-3">
+                <div class="item-1">
+                    <p>No of Registers</p>
+                    <p class="big">4002</p>
+                    <p>10.00% 30 day</p>
+                </div>
+                <div class="item-2">
+                    <p>Total Bookings</p>
+                    <p class="big">61347</p>
+                    <p>22.00% 30 day</p>
+                </div>
+
+                <div class="item-3">
+                    <p>No of Meetings</p>
+                    <p class="big">372</p>
+                    <p>16.00% 30 day</p>
+                </div>
+                <div class="item-4">
+                    <p>Total clients</p>
+                    <p class="big">73463</p>
+                    <p>19.00% 30 day</p>
+                </div>
+            </div>
+            <div class="item-4" id="nav-item-3">
+
+                <div class="col-md-6 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="chartjs-size-monitor">
+                                <div class="chartjs-size-monitor-expand">
+                                    <div class=""></div>
+                                </div>
+                                <div class="chartjs-size-monitor-shrink">
+                                    <div class=""></div>
+                                </div>
+                            </div>
+                            <!-- <p class="card-title">Order Details</p> -->
+                            <h2 style="margin-bottom: 10px;">Order Details</h2>
+                            <p class="font-weight-500">The total number of sessions within the date range. It is the
+                                period time a user is
+                                actively engaged with your website, page or app, etc</p>
+                            <div class="d-flex flex-wrap mb-5">
+                                <div class="mr-5 mt-3">
+                                    <p class="text-muted">Order value</p>
+                                    <h3 class="text-primary fs-30 font-weight-medium">12.3k</h3>
+                                </div>
+                                <div class="mr-5 mt-3">
+                                    <p class="text-muted">Orders</p>
+                                    <h3 class="text-primary fs-30 font-weight-medium">14k</h3>
+                                </div>
+                                <div class="mr-5 mt-3">
+                                    <p class="text-muted">Users</p>
+                                    <h3 class="text-primary fs-30 font-weight-medium">71.56%</h3>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="text-muted">Downloads</p>
+                                    <h3 class="text-primary fs-30 font-weight-medium">34040</h3>
+                                </div>
+                            </div>
+                            <canvas id="order-chart" width="670" height="334"
+                                style="display: block; height: 167px; width: 335px;"
+                                class="chartjs-render-monitor"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-5">
+                <div class="col-md-6 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="chartjs-size-monitor">
+                                <div class="chartjs-size-monitor-expand">
+                                    <div class=""></div>
+                                </div>
+                                <div class="chartjs-size-monitor-shrink">
+                                    <div class=""></div>
+                                </div>
+                            </div>
+
+                            <!-- <p class="card-title">Sales Report</p> -->
+                            <h2 style="margin-bottom: 10px;">Sales Report</h2>
+
+                            <p class="font-weight-500">The total number of sessions within the date range. It is the
+                                period time a user is
+                                actively engaged with your website, page or app, etc</p>
+                            <div id="sales-legend" class="chartjs-legend mt-4 mb-2">
+                                <ul class="legend">
+                                    <li><span style="background-color: #920000;"></span>Offline Sales
+                                    </li>
+                                    <li><span style="background-color: #fccece"></span>Online Sales</li>
+                                </ul>
+                            </div>
+                            <canvas id="sales-chart" width="670" height="334"
+                                style="display: block; height: 167px; width: 335px;"
+                                class="chartjs-render-monitor"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container" id="nav-item-4">
+                <div id="main-one">
+                    <div>
+                        <!-- <span class="common-span">to do tracker</span> -->
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="grid-table">
+                        <div>
+                            <div class="grid-item">Name</div>
+                            <div class="grid-item">Price</div>
+                            <div class="grid-item">Date</div>
+                            <div class="grid-item">Status</div>
+                        </div>
+                        <!-- Sample data -->
+                        <div>
+                            <div class="grid-item">sample engneering</div>
+                            <div class="grid-item">$10.00</div>
+                            <div class="grid-item">21 sep 2024</div>
+                            <div class="grid-item completed">completed</div>
+                        </div>
+                        <div>
+                            <div class="grid-item">sample engneering</div>
+                            <div class="grid-item">$10.00</div>
+                            <div class="grid-item">21 sep 2024</div>
+                            <div class="grid-item cancelled">cancelled</div>
+                        </div>
+                        <div>
+                            <div class="grid-item">sample engneering</div>
+                            <div class="grid-item">$10.00</div>
+                            <div class="grid-item">21 sep 2024</div>
+                            <div class="grid-item pending">pending</div>
+                        </div>
+                        <div>
+                            <div class="grid-item">sample engneering</div>
+                            <div class="grid-item">$10.00</div>
+                            <div class="grid-item">21 sep 2024</div>
+                            <div class="grid-item pending">pending</div>
+                        </div>
+                        <div>
+                            <div class="grid-item">sample engneering</div>
+                            <div class="grid-item">$10.00</div>
+                            <div class="grid-item">21 sep 2024</div>
+                            <div class="grid-item pending">pending</div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div id="main-two">
+                    <div class="container1">
+                        <h2>To-Do List</h2>
+                        <div class="todo-list">
+                            <div id="todo-items">
+                                <!-- To-Do items will be dynamically added here -->
+                            </div>
+                        </div>
+
+                        <div class="add-todo">
+                            <input type="text" id="todo-input" placeholder="Enter your To-Do">
+                            <button id="add-button">Add</button>
+                        </div>
+                    </div>
+                    <script src="todo.js"></script>
+                </div>
+            </div>
+
+            <div id="notification-container">
+                <!-- <span>notifications</span> -->
+                <h2>notifications</h2>
+                <div id="notifications">
+                    <div class="notification">
+                        <img src="face1.jpg" alt="user image" width="50">
+                        <div>
+                            <p>isbella becker</p>
+                            <p>sales dashboard has been designed.</p>
+                            <p class="timing">9:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <img src="face2.jpg" alt="user image" width="50">
+                        <div>
+                            <p>isbella becker</p>
+                            <p>sales dashboard has been designed.</p>
+                            <p class="timing">9:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <img src="face3.jpg" alt="user image" width="50">
+                        <div>
+                            <p>isbella becker</p>
+                            <p>sales dashboard has been designed.</p>
+                            <p class="timing">9:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <img src="face6.jpg" alt="user image" width="50">
+                        <div>
+                            <p>isbella becker</p>
+                            <p>sales dashboard has been designed.</p>
+                            <p class="timing">9:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <img src="face4.jpg" alt="user image" width="50">
+                        <div>
+                            <p>isbella becker</p>
+                            <p>sales dashboard has been designed.</p>
+                            <p class="timing">9:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <img src="face5.jpg" alt="user image" width="50">
+                        <div>
+                            <p>isbella becker</p>
+                            <p>sales dashboard has been designed.</p>
+                            <p class="timing">9:30 PM</p>
+                        </div>
+                    </div>
+                    <!-- Remaining notifications with updated image source -->
+                </div>
+            </div>
+
+            <!-- multistep form -->
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Personal Details</li>
+                    <li>Customer Issue</li>
+                    <li>Final Submit</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Personal Details</h2>
+                    <h3 class="fs-subtitle">Step 1</h3>
+                    <input type="text" name="fullname" placeholder="Full Name" />
+                    <input type="email" name="email" placeholder="Email Address" />
+                    <input type="text" name="id" placeholder="ID" />
+                    <input type="tel" name="phone" placeholder="Phone Number" />
+                    <input type="file" name="attachment" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Customer Issue</h2>
+                    <h3 class="fs-subtitle">Step 2</h3>
+                    <input type="text" name="customerfullname" placeholder="Customer's Full Name" />
+                    <input type="email" name="customeremail" placeholder="Customer's Email Address" />
+                    <input type="tel" name="customerphone" placeholder="Customer's Phone Number" />
+                    <input type="file" name="customerattachment" />
+                    <input type="text" name="customerid" placeholder="Customer ID" />
+                    <textarea name="issue" placeholder="Issue with Service"></textarea>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Final Submit</h2>
+                    <h3 class="fs-subtitle">Step 3</h3>
+                    <p>Thank you for your submission!</p>
+                </fieldset>
+            </form>
+
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+        <script src="dashboard.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+            integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="forms.js"></script>
+
+</body>
+
+</html>
